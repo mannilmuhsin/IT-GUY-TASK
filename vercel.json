@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "your/source/directory",
+        "use": "@vercel/static-build"
+      }
+    ],
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/(.*)", "dest": "your/entrypoint" }
+    ],
+    "outputDirectory": "dist"
+  }
+  
